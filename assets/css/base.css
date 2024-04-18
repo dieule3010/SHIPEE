@@ -3,6 +3,10 @@
   --white-color: #fff;
   --black-color: #000;
   --text-color: #333;
+  --xanh-color: rgb(4, 4, 146);
+  --navbar-height: 34px;
+  --header-heght:120px;
+  --header_with_search_height: calc(var(header-heght)-var(var(--navbar-height)))
 }
 
 * {
@@ -15,6 +19,40 @@ html {
   font-size: 62.5%;
   line-height: 1.6rem;
   box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes growth {
+  from {
+    transform: scale(var(--growth-from));
+  }
+  to {
+    transform: scale(var(--growth-to));
+  }
+}
+
+.modal_body {
+  --growth-from: 0.7;
+  --growth-to: 1;
+  background-color: #d4cdec;
+  margin: auto;
+  z-index: 1;
+  border-radius: 5px;
+  animation: growth linear 0.1s;
+}
+
+.modal {
+  position: fixed;
+  margin: 0;
+  display: flex;
+  animation: fadeIn linear 0.1s;
 }
 
 .grid {
@@ -32,6 +70,34 @@ html {
   flex-wrap: wrap;
 }
 
-/* animation */
+/* button style */
+.btn {
+  min-width: 142px;
+  height: 36px;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.6 rem;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-color);
+}
 
 
+
+.btn.btn_primary {
+  color: var(--white-color);
+  background-color: #54448b
+}
+
+.btn.btn--disable {
+  color: #ccc ;
+  cursor: default;
+  filter: brightness(80%);
+  background-color: #999;
+}
+
+.btn--size-s {
+  height: px;
+}
