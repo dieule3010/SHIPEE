@@ -19,6 +19,7 @@
   margin: 0 8px;
   position: relative;
   min-height: 26px;
+  z-index: 1;
 }
 
 
@@ -433,6 +434,7 @@
 
 .header_search_buy {
   height: 100%;
+  width: 100%;
   flex : 1;
   outline: none;
   font-size: 1.4rem;
@@ -542,4 +544,81 @@
 .header_search_option_item i {
   display: inline-block;
   margin-left: 8px;
+}
+
+.header_search_input_wrap {
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+
+.heading_search_histoy {
+
+}
+
+.header_search_history_item {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 10px;
+
+
+}
+
+.header_search_buy:focus ~ .header_search_history {
+  display: block;
+}
+
+.header_search_history {
+  position: absolute;
+  background-color: rgb(224, 213, 240);
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #666;
+  display: none;
+}
+
+.header_search_history h3 {
+  font-size: 15px;
+  padding: 0px 5px;
+
+}
+
+
+.header_search_history_item {
+  height: 38px;
+  padding: 0 12px;
+
+}
+.header_search_history_item a {
+  text-decoration: none;
+  color: #070118;
+  display: block;
+  line-height: 38px;
+}
+
+
+.header_search_history_item:hover {
+  background-color: #f1eaea;
+}
+
+.header_search_history_heading {
+  margin: 8px 12px;
+  font-size: 1.4rem;
+  color:#999;
+
+}
+
+.heading_search_histoy_list {
+  padding-left: 0px;
+}
+
+.header_search_histoy_list:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.header_search_histoy_list:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }

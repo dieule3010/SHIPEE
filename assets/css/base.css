@@ -6,7 +6,7 @@
   --xanh-color: rgb(4, 4, 146);
   --navbar-height: 34px;
   --header-heght:120px;
-  --header_with_search_height: calc(var(header-heght)-var(var(--navbar-height)))
+  --header_with_search_height: calc(var(header-heght)- var(navbar-height));
 }
 
 * {
