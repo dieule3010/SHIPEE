@@ -622,3 +622,30 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
+
+.header__cart_list {
+  position: absolute;
+  top: 19%;
+  right: 20px;
+  background-color: #fff;
+  width: 365px;
+  align-items: flex-end;
+}
+
+.header_cart_list_no_cart {
+  padding: 28px;
+
+}
+
+.header_cart_img {
+  cursor: pointer;
+}
+
+.header_cart_list_no_cart_img {
+  width: 60%;
+  display: none;
+}
+
+.header_cart_img:hover .header_cart_list_no_cart_img {
+  display: block;
+}
