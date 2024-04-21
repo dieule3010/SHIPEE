@@ -91,6 +91,10 @@ html {
   background-color: #54448b
 }
 
+.btn.btn_primary:hover {
+  opacity: 1;
+  background-color: #42356e;
+}
 .btn.btn--disable {
   color: #ccc ;
   cursor: default;
@@ -100,4 +104,19 @@ html {
 
 .btn--size-s {
   height: px;
+}
+
+.header__cart_view_cart {
+  float: right;
+  margin: 0px 12px 12px 0px;
+}
+
+.header__cart_item_remove:hover {
+ opacity: 1;
+ color: #30148d;
+}
+
+.header__cart_item:hover {
+  opacity: 1;
+  background-color: #ccc;
 }

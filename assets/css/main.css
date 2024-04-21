@@ -615,7 +615,7 @@
   position: absolute;
   border-left: 226px solid #5e5b5b;
   content: "";
-  right: 237px;
+  right: 242px;
   top: -44px;
   border-width: 20px 26px;
   border-style: solid;
@@ -640,13 +640,15 @@
   width: 365px;
   align-items: flex-end;
   border-radius: 2px;
+  display: none;
 }
+
 
 .header__cart_list{
   position: absolute;
   top: 14%;
   right 20px;
-  background-color: var(--white-color);
+  background-color:#d4cdec;
   width: 400px;
   border-radius: 2px;
   box-shadow: 0 2px 10px ;
@@ -705,19 +707,96 @@
   display: block;
 }
 
-  .header_cart_img::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-left: 226px solid #fff;
-    height: 8px;
-    right: 123px;
-    top: 14%;
-    transform: translateY(-50%);
-}
+/* .header_cart_img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 400px solid #d4cdec;
+  height: 8px;
+  right: 20px;
+  top: 14%;
+  transform: translateY(-50%);
+} */
 .header__cart_list_no_cart_cmt {
   font-size: 15px;
   display: block;
   color: #01051b;
   display: none;
+}
+
+h4.header__cart_list_has_cart_cmt {
+  color: black;
+  font-size: 13px;
+  margin-bottom: 23px;
+  margin-left: -239px;
+}
+
+.header__cart_list_has_cart_cmt {
+
+}
+
+.header__cart_item {
+  display: flex;
+}
+
+.header__cart_item {
+ color:#01051b;
+ font-size: 1.5rem;
+}
+
+.header__cart-img {
+  width: 42px;
+  height: 42px;
+  margin: 12px;
+}
+
+.header_cart_list_item {
+  padding-left: 0px;
+  margin-top: -25px;
+}
+
+
+.header__cart_item_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -9px;
+  margin-bottom: -8px;
+}
+
+.header__cart_item_name {
+  margin-right: 20px;
+}
+
+.header__cart_item_price_wrap {
+
+}
+
+.header__cart_item_price {
+  color: purple;
+}
+
+.header__cart_item_multiply {
+
+}
+
+.header__cart_item_qtn {
+
+}
+
+.header__cart_item_body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__cart_item_dicription {
+
+}
+
+.header__cart_item_remove {
+  cursor: pointer;
+}
+
+.header_seen_cart {
+
 }
