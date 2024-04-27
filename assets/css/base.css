@@ -120,3 +120,32 @@ html {
   opacity: 1;
   background-color: #ccc;
 }
+
+.grid {
+  width: 2000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.gid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.grid_column-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 16.6667%;
+}
+
+.grid_column-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 83.3334%;
+}
